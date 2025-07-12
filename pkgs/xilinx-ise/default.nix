@@ -20,8 +20,8 @@ in buildFHSUserEnv rec {
     freetype
     glib
     iproute2
+    fxload
     libcxx
-    # libstdcxx5
     libusb-compat-0_1
     libuuid
     motif
@@ -45,6 +45,7 @@ in buildFHSUserEnv rec {
 
   multiPkgs = pkgs: with pkgs; [
     ncurses5
+    fxload
   ];
 
   # Network namespace required so that a dummy NIC with the required MAC can
