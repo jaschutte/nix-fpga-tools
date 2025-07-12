@@ -20,7 +20,8 @@ in buildFHSUserEnv rec {
     freetype
     glib
     iproute2
-    libstdcxx5
+    libcxx
+    # libstdcxx5
     libusb-compat-0_1
     libuuid
     motif

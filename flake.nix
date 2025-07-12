@@ -1,7 +1,7 @@
 {
   description = "FPGA tools for Nix.";
 
-  inputs.nixpkgs.url = "nixpkgs/release-21.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
 
   outputs = { self, nixpkgs }:
     let
