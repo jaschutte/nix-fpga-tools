@@ -15,5 +15,8 @@ stdenv.mkDerivation rec {
     7zz e 14.7_VM-disk001.vmdk 0.img
     rm 14.7_VM-disk001.vmdk
     7zz x -snld -o$out 0.img opt/Xilinx home/ise
+
+    rm -rf $out/opt/Xilinx/14.7/ISE_DS/ISE/java $out/opt/Xilinx/14.7/ISE_DS/ISE/java.old
+    cp -r $out/opt/Xilinx/14.7/ISE_DS/ISE/java6 $out/opt/Xilinx/14.7/ISE_DS/ISE/java
   '';
 }
